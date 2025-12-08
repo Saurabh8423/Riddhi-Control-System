@@ -1,0 +1,58 @@
+.pcard {
+  width: 260px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.pcard-img-wrap {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.pcard-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pcard-body {
+  padding: 14px;
+}
+
+.pcard-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pcard-price {
+  font-size: 16px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.pcard-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pcard-btn:hover {
+  background: #0056c1;
+}

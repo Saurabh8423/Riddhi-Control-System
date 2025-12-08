@@ -1,0 +1,40 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 360px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+  background: #007bff;
+}

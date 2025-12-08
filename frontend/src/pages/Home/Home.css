@@ -1,0 +1,55 @@
+.home-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.about-section,
+.products-section,
+.ratings-section,
+.contact-section {
+  padding: 40px 20px;
+}
+
+.about-section h2,
+.products-section h2,
+.ratings-section h2,
+.contact-section h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.see-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-more a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
