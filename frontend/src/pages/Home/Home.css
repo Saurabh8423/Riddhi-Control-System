@@ -1,18 +1,34 @@
+/* ------------------------------
+   HOME BASE LAYOUT
+------------------------------ */
 .home-container {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
+/* Blur when popup opens */
+.home-blur {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
 .hero-section {
   width: 100%;
   margin-bottom: 30px;
 }
 
+/* ------------------------------
+   SHARED SECTION STYLES
+------------------------------ */
 .about-section,
 .products-section,
 .ratings-section,
-.contact-section {
+contact-section {
   padding: 40px 20px;
 }
 
@@ -24,12 +40,334 @@
   font-size: 28px;
 }
 
+/* ------------------------------
+   ABOUT SECTION
+------------------------------ */
+.about-section {
+  padding: 50px 25px;
+  text-align: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #444;
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.read-more {
+  color: #3b4fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-info-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.about-card {
+  text-align: center;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #f2f3f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 12px;
+}
+
+.info-title {
+  font-size: 15px;
+  color: #777;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ------------------------------
+   FIXED PRODUCT GRID – 2 ROW, 4 COLUMN
+------------------------------ */
+.home-product-grid {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 12px 0;
+  min-height: 40px;
+}
+
+.details-btn {
+  background: none;
+  border: none;
+  color: #0071ce;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* VIEW COMPLETE RANGE BUTTON */
+.view-range-container {
+  margin-top: 25px;
+}
+
+.view-range-btn {
+  padding: 12px 28px;
+  font-size: 18px;
+  background: #0071ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-range-btn:hover {
+  background: #005fb0;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-img {
+    height: 180px;
+  }
+}
+
+
+/* ------------------------------
+   RATINGS & REVIEWS
+------------------------------ */
+
+.ratings-reviews-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.ratings-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.ratings-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #3f51b5;
+  margin: 8px auto 0;
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SUMMARY */
+.rating-summary {
+  text-align: left;
+  width: 250px;
+}
+
+.rating-score {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.rating-score span {
+  font-size: 30px;
+}
+
+.stars {
+  font-size: 28px;
+  margin: 5px 0;
+}
+
+.rating-count {
+  font-size: 20px;
+  color: #555;
+}
+
+/* RIGHT BARS */
+.rating-bars {
+  flex: 1;
+  min-width: 300px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.bar {
+  height: 10px;
+  background: #ddd;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #43a047;
+  border-radius: 20px;
+}
+
+/* REVIEWS LIST */
+.review-header {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.review-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.review-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review-content {}
+
+.review-name {
+  font-size: 18px;
+}
+
+.review-stars {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.review-details {
+  color: #555;
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .ratings-container {
+    flex-direction: column;
+  }
+}
+
+
+/* ------------------------------
+   PRODUCT GRID (Not Used Now)
+------------------------------ */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
 
+/* ------------------------------
+   PRODUCT LIST - COLUMN + SCROLL
+------------------------------ */
+.product-list {
+  display: flex;
+  flex-direction: column;      /* Column layout */
+  gap: 25px;
+  max-height: 600px;           /* Scrollable height */
+  overflow-y: auto;            /* Enable vertical scroll */
+  padding-right: 10px;
+}
+
+/* Smooth Scrollbar */
+.product-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+  background: #b3b3b3;
+  border-radius: 6px;
+}
+
+/* ------------------------------
+   SEE MORE LINK
+------------------------------ */
 .see-more {
   text-align: center;
   margin-top: 20px;
@@ -41,15 +379,25 @@
   font-weight: bold;
 }
 
+/* ------------------------------
+   CONTACT GRID
+------------------------------ */
 .contact-grid {
-  display: grid;
+  display:inline;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
 
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
 @media (max-width: 768px) {
   .contact-grid,
   .products-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-list {
+    max-height: 500px; /* Adjust height for mobile */
   }
 }

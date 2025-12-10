@@ -1,21 +1,18 @@
 .pcard {
   width: 260px;
-  border: 1px solid #e2e2e2;
+  height: 300px;
+  background: #fff;
   border-radius: 12px;
   overflow: hidden;
-  background: #fff;
-  transition: 0.3s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  position: relative;
   cursor: pointer;
-}
-
-.pcard:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
 }
 
 .pcard-img-wrap {
   width: 100%;
-  height: 180px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -25,34 +22,42 @@
   object-fit: cover;
 }
 
-.pcard-body {
-  padding: 14px;
-}
-
-.pcard-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.pcard-price {
-  font-size: 16px;
-  color: #007bff;
-  margin-bottom: 8px;
-}
-
-.pcard-btn {
-  width: 100%;
-  padding: 10px;
-  background: #007bff;
+.pcard-title-bar {
+  background: #3b3b3b;
   color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  cursor: pointer;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Hover animation like screenshot */
+.pcard:hover .pcard-title-bar {
+  transform: translateY(-60px);
+}
+
+/* Hidden hover layer */
+.pcard-hover {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  text-align: center;
   transition: 0.3s;
 }
 
-.pcard-btn:hover {
-  background: #0056c1;
+.pcard:hover .pcard-hover {
+  bottom: 0;
+}
+
+.quote-btn {
+  padding: 10px 16px;
+  background: #585c61;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }

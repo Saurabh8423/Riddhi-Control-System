@@ -1,0 +1,126 @@
+.contact-wrapper {
+  padding: 50px 5%;
+  background: #ffffff;
+}
+
+.contact-title {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  border-left: 6px solid #2a2ea5;
+  padding-left: 15px;
+  color: #1a1a1a;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contact-left h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.contact-links li {
+  list-style: none;
+  margin: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-links li:hover {
+  padding-left: 8px;
+  color: #3539e6;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-right h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.map-link {
+  font-size: 15px;
+  color: #2956e0;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.mobile-link {
+  color: #007b55;
+  cursor: pointer;
+}
+
+/* BUTTON ROW */
+.btn-row {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.sms-btn {
+  background: #026d63;
+  color: white;
+}
+
+.sms-btn:hover {
+  background: #01574f;
+}
+
+.email-btn {
+  background: #e9f0ff;
+  border: 1px solid #97b7ff;
+  color: #2a3eb1;
+}
+
+.email-btn:hover {
+  background: #d9e6ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 780px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}

@@ -1,19 +1,22 @@
 import React from "react";
 import "./ProductCard.css";
 
-export default function ProductCard({ image, name, price }) {
+export default function ProductCard({ image, name, onQuote }) {
   return (
     <div className="pcard">
       <div className="pcard-img-wrap">
         <img src={image} alt={name} className="pcard-img" />
       </div>
 
-      <div className="pcard-body">
-        <h3 className="pcard-title">{name}</h3>
+      <div className="pcard-hover">
+        {/* <h3>{name}</h3> */}
+        <button className="quote-btn" onClick={() => onQuote(name)}>
+          Get Best Quote
+        </button>
+      </div>
 
-        {price && <p className="pcard-price">₹{price}</p>}
-
-        <button className="pcard-btn">View Details</button>
+      <div className="pcard-title-bar">
+        <p>{name}</p>
       </div>
     </div>
   );
