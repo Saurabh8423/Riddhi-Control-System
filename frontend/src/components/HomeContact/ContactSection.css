@@ -1,6 +1,7 @@
 .contact-wrapper {
-  padding: 50px 5%;
+  padding: 50px 120px;
   background: #ffffff;
+
 }
 
 .contact-title {
@@ -46,8 +47,9 @@
 
 /* RIGHT SIDE */
 .contact-right {
-  flex: 1;
-  min-width: 300px;
+  /* flex: 1; */
+  min-width: 500px;
+
 }
 
 .contact-right h3 {

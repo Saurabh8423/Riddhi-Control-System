@@ -36,8 +36,6 @@ export default function Header() {
 
   return (
     <>
-      {/* OVERLAY */}
-      <div className={`overlay ${menuOpen ? "show" : ""}`}></div>
 
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="left">
