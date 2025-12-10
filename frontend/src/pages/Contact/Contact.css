@@ -1,0 +1,171 @@
+.contact-page {
+  display: flex;
+  gap: 50px;
+  padding: 50px 6%;
+  min-height: 85vh;
+  background: #f6f9fc;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.icon {
+  font-size: 22px;
+  color: #0056ff;
+}
+
+.map-link {
+  display: inline-block;
+  margin: 10px 0;
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.view-mobile {
+  color: #00856f;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.sms-btn {
+  background: #007bff;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.sms-btn:hover {
+  background: #0063cc;
+  box-shadow: 0px 6px 14px rgba(0, 123, 255, 0.5);
+}
+
+.email-btn {
+  background: #ff6b2c;
+  box-shadow: 0px 4px 12px rgba(255, 107, 44, 0.3);
+}
+
+.email-btn:hover {
+  background: #e85b1f;
+  box-shadow: 0px 6px 14px rgba(255, 107, 44, 0.5);
+}
+
+/* RIGHT SIDE (FORM CARD) */
+.contact-right {
+  flex: 1;
+}
+
+.contact-right h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* FORM BOX */
+.contact-form {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
+}
+
+.contact-form input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d0;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus {
+  border-color: #0a66c2;
+  box-shadow: 0px 0px 8px rgba(10, 102, 194, 0.2);
+  outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: linear-gradient(135deg, #0a66c2, #004c9f);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  justify-content: center;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0,102,255,0.25);
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #004c9f, #0a66c2);
+  box-shadow: 0px 8px 20px rgba(0,102,255,0.35);
+  transform: translateY(-2px);
+}
+
+.success-msg {
+  font-size: 22px;
+  color: #0a8a3a;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-page {
+    flex-direction: column;
+  }
+
+  .btn-row {
+    flex-wrap: wrap;
+  }
+}

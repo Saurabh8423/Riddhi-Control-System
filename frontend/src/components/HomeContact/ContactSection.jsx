@@ -43,7 +43,7 @@ const ContactSection = () => {
 
           <div className="info-block">
             <span className="icon">📞</span>
-            <p className="mobile-link">View Mobile Number</p>
+            <p className="mobile-link">9172099438</p>
           </div>
 
           <div className="btn-row">
